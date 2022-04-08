@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "02612e8e-fd5c-43c3-9506-3cd8c47a7aa6",
+		"name": "PruebaTuya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crear Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin\",   \r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/crear_usuario",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"crear_usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login sistema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin\",   \r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar compra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin\",   \r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener productos maestra",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENhamVybyI6IjIiLCJUb2tlbiI6WyJjcmVhclNlcnZpY2lvIiwib2J0ZW5lclNlcnZpY2lvIiwiYWN0dWFsaXphclNlcnZpY2lvIiwiZWxpbWluYXJTZXJ2aWNpbyJdLCJuYmYiOjE2NDkzNzkwMTIsImV4cCI6MTY0OTM4NjIxMiwiaWF0IjoxNjQ5Mzc5MDEyfQ.wAYvAjAm2hNPOsQhSOM9vKuzwZfpNoyhck9XeHkUQZM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin\",   \r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/obtenerProductos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"obtenerProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener tipos documento maestra",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENhamVybyI6IjIiLCJUb2tlbiI6WyJjcmVhclNlcnZpY2lvIiwib2J0ZW5lclNlcnZpY2lvIiwiYWN0dWFsaXphclNlcnZpY2lvIiwiZWxpbWluYXJTZXJ2aWNpbyJdLCJuYmYiOjE2NDkzNzkwMTIsImV4cCI6MTY0OTM4NjIxMiwiaWF0IjoxNjQ5Mzc5MDEyfQ.wAYvAjAm2hNPOsQhSOM9vKuzwZfpNoyhck9XeHkUQZM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin\",   \r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/obtenerTiposDocumento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"obtenerTiposDocumento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar tipos documento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENhamVybyI6IjIiLCJUb2tlbiI6WyJjcmVhclNlcnZpY2lvIiwib2J0ZW5lclNlcnZpY2lvIiwiYWN0dWFsaXphclNlcnZpY2lvIiwiZWxpbWluYXJTZXJ2aWNpbyJdLCJuYmYiOjE2NDkzNzkwMTIsImV4cCI6MTY0OTM4NjIxMiwiaWF0IjoxNjQ5Mzc5MDEyfQ.wAYvAjAm2hNPOsQhSOM9vKuzwZfpNoyhck9XeHkUQZM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"admin\",   \r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/obtenerTiposDocumento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"obtenerTiposDocumento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar productos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENhamVybyI6IjIiLCJUb2tlbiI6WyJjcmVhclNlcnZpY2lvIiwib2J0ZW5lclNlcnZpY2lvIiwiYWN0dWFsaXphclNlcnZpY2lvIiwiZWxpbWluYXJTZXJ2aWNpbyJdLCJuYmYiOjE2NDkzNzkwMTIsImV4cCI6MTY0OTM4NjIxMiwiaWF0IjoxNjQ5Mzc5MDEyfQ.wAYvAjAm2hNPOsQhSOM9vKuzwZfpNoyhck9XeHkUQZM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Papa\",   \r\n    \"Precio\": 7000.20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/registrarProductos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"registrarProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener ventas de un cajero",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENhamVybyI6IjIiLCJUb2tlbiI6WyJjcmVhclNlcnZpY2lvIiwib2J0ZW5lclNlcnZpY2lvIiwiYWN0dWFsaXphclNlcnZpY2lvIiwiZWxpbWluYXJTZXJ2aWNpbyJdLCJuYmYiOjE2NDkzNzkwMTIsImV4cCI6MTY0OTM4NjIxMiwiaWF0IjoxNjQ5Mzc5MDEyfQ.wAYvAjAm2hNPOsQhSOM9vKuzwZfpNoyhck9XeHkUQZM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Papa\",   \r\n    \"Precio\": 7000.20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/v1/servicio/obtenerVentasCajero/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"v1",
+						"servicio",
+						"obtenerVentasCajero",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
